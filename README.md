@@ -1,39 +1,39 @@
 # petCare-backend
 
-Backend do projeto PetCare, implementado durante a disciplina de Projeto de Software 1
+Backend of the PetCare application.
 
-## Como executar este projeto localmente
+## How to run this project locally
 
-### Dependências
+### Dependencies
 
-Para executar este projeto localmente, é necessário instalar as dependências:
+To run this project locally, you need to install the dependencies:
 
 - [Oracle OpenJDK 19](https://jdk.java.net/19/) 
-  > O IntelliJ faz o download dessa versão se for configurada como a versão da JDK para o projeto. 
+  > IntelliJ downloads this version if it is set as the JDK version for the project.
 - [PostgreSQL 15](https://www.enterprisedb.com/downloads/postgres-postgresql-downloads)
-  > Durante a instalação do PostgreSQL, será pedido que registre uma senha do usuário superuser (postgres). Guarde essa senha pois será usada em outras etapas
+  > During the installation of PostgreSQL, you will be asked to enter a password for the superuser (postgres) user. Keep this password as it will be used in other steps.
 
-### Configuração Inicial do Banco de Dados
+### Initial Database Configuration
 
-Pode ser feito via pgAdmin 4 ou via SQL Shell (psql)
+It can be done via pgAdmin 4 or via SQL Shell (psql).
 
-1. Logar no psql usando o login postgres
+1. Log in to psql using the postgres login:
     ``` 
-    # Para os campos vazios basta apertar enter sem digitar nada 
+    # Press enter without typing anything for empty fields
     Server [localhost]:
     Database [postgres]: 
     Port [5432]:
     Username [postgres]:
-    Password for user postgres: <inserir senha cadastrada anteriormente>
+    Password for user postgres: <enter previously registered password>
     ```
 
-2. Criar banco de dados com o nome `petcare`
+2. Create a database named petcare:
     ```
     CREATE DATABASE petcare;
     ```
 
-3. Sair do psql com o comando `exit`
+3. Exit psql using the 'exit' command.
 
-4. Preencher a senha do usuário `postgres` para o profile `dev`, no arquivo application.yml em src/main/resources 
+4. Fill in the password for the postgres user in the dev profile within the application.yml file located in src/main/resources.
 
-5. Iniciar a aplicação pela IDE
+5. Start the application using your IDE.
